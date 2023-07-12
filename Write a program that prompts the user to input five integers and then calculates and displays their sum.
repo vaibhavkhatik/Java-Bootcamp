@@ -1,0 +1,22 @@
+import java.util.Scanner;
+
+public class IntegerSumCalculator {
+    public static void main(String[] args) {
+        int sum = 0;
+        int count = 5; // Number of integers to be inputted
+
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Please enter " + count + " integers:");
+
+        for (int i = 1; i <= count; i++) {
+            System.out.print("Integer " + i + ": ");
+            int num = scanner.nextInt();
+            sum += num;
+        }
+
+        System.out.println("The sum of the integers is: " + sum);
+
+        scanner.close();
+    }
+}
